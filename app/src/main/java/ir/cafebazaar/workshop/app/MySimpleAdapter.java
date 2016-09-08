@@ -57,7 +57,7 @@ public class MySimpleAdapter extends BaseAdapter {
         }
 
 
-        viewHolder.title.setText(mListItems.get(position).title);
+        viewHolder.title.setText(mListItems.get(position).title + " " + position);
         viewHolder.button.setText(mListItems.get(position).buttonText);
         viewHolder.image.setImageResource(mListItems.get(position).resId);
 
