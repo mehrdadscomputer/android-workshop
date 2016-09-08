@@ -2,6 +2,7 @@ package ir.cafebazaar.workshop.app;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -16,6 +17,8 @@ public class SimpleListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_list);
+
+        Log.e(getClass().getSimpleName(), "onCreate()");
 
         List<String> items = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
