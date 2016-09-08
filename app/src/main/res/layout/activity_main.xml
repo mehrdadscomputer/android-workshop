@@ -13,5 +13,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Hi"
+        android:id="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/text_bye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Bye"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_bye"
+        android:gravity="center"
+        android:text="Good"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash621_xl_fa"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_above="@+id/text_bye"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginBottom="120dp"/>
 </RelativeLayout>
