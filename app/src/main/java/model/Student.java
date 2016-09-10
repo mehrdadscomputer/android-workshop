@@ -1,8 +1,5 @@
 package model;
 
-/**
- * Created by reza on 9/8/16.
- */
 public class Student {
     private String name;
     private int avg;
